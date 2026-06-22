@@ -49,7 +49,7 @@ def predict():
     if final_duration < 45:
         action = "🟢 Minor Impact: Standard monitoring. No immediate diversion required."
         color = "#00b894" # Green
-    elif final_duration <= 90:
+    elif final_duration <= 60:
         action = "🟡 Moderate Congestion: Pre-deploy wardens. Issue mild rerouting alerts."
         color = "#fdcb6e" # Yellow
     else:
